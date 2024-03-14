@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đóng góp ý kiến về sản phẩm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .feedback-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+        }
+        .feedback-form input[type="text"],
+        .feedback-form input[type="email"],
+        .feedback-form select,
+        .feedback-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+        .feedback-form button {
+            background-color: #4caf50;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1><font color="purple">ĐÓNG GÓP Ý KIẾN VỀ SẢN PHẨM</font></h1>
+    <p>Góp ý của bạn sẽ được chúng tôi xem xét, vui lòng nhập tiếng Việt có dấu</p>
+    <p>Các ý kiến đóng nên viết chi tiết rõ ràng, kèm theo các minh chứng xác thực thời gian và địa điểm <i class="i">(nếu có)</i></p> 
+
+    <div class="feedback-container">
+        <form class="feedback-form" action="#" method="post">
+            <input type="text" name="name" placeholder="Họ và tên" required>
+            <input type="text" name="card_number" placeholder="Mã thẻ" required>
+            <input type="text" name="phone" placeholder="Số điện thoại" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+
+            <select name="customer_type">
+                <option value="normal">Chọn loại khách hàng</option>
+                <option value="vip">VVIP</option>
+                <option value="vip">VIP</option>
+                <option value="regular">Thường</option>
+            </select>
+            
+            <input type="text" name="invoice_code" placeholder="Mã hóa đơn" required>
+            <input type="text" name="captcha" placeholder="Nhập chữ nhìn thấy ở hình" required>
+            <button type="submit">GỬI Ý KIẾN</button>
+        </form>
+    </div>
+</body>
+</html>
